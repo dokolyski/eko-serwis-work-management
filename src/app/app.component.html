@@ -1,0 +1,19 @@
+<mat-toolbar class="toolbar">
+  <span>Eko-serwis</span>
+  <span class="spacer"></span>
+  <button mat-raised-button>
+    <mat-icon>add</mat-icon>
+    <span fxHide.lt-sm>Dodaj czas pracy</span>
+  </button>
+  <button color="primary" mat-raised-button>
+    <mat-icon>login</mat-icon>
+    <span fxHide.lt-sm>Rozpocznij pracę</span>
+  </button>
+  <button color="warn" mat-raised-button>
+    <mat-icon>logout</mat-icon>
+    <span fxHide.lt-sm>Zakończ pracę</span>
+  </button>
+</mat-toolbar>
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>

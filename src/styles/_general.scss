@@ -1,0 +1,36 @@
+.main-container {
+  padding: 15px 5%;
+
+  .box-container {
+    background-color: rgb(255, 252, 239);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+
+    form {
+      padding: 10px 0 10px 10px;
+      display: flex;
+      flex-wrap: wrap;
+
+      > .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        > * {
+          flex: 1 1 auto;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.toolbar {
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  > button {
+      margin-left: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+<form (ngSubmit)="login()" [formGroup]="form">
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Numer telefonu</mat-label>
+      <input mask="000 000 000" formControlName="mobile" matInput placeholder="Numer telefonu" />
+      <mat-icon matPrefix>phone</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Hasło</mat-label>
+      <input type="password" formControlName="password" matInput placeholder="Hasło" />
+      <mat-icon matPrefix>password</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <button
+      style="margin-top: 10px"
+      color="primary"
+      [disabled]="form.invalid"
+      mat-raised-button
+    >
+      Zaloguj się
+    </button>
+  </div>
+</form>

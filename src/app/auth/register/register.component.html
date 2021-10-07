@@ -1,0 +1,54 @@
+<form (ngSubmit)="register()" [formGroup]="form">
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Imie i nazwisko</mat-label>
+      <input formControlName="name" matInput placeholder="Imie i nazwisko" />
+      <mat-icon matPrefix>person</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Numer telefonu</mat-label>
+      <input mask="000 000 000" formControlName="mobile" matInput placeholder="Numer telefonu" />
+      <mat-icon matPrefix>phone</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Hasło</mat-label>
+      <input
+        formControlName="password"
+        type="password"
+        matInput
+        placeholder="Hasło"
+      />
+      <mat-icon matPrefix>password</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Powtórz hasło</mat-label>
+      <input
+        formControlName="repeatPassword"
+        type="password"
+        matInput
+        placeholder="Powtórz hasło"
+      />
+      <mat-icon matPrefix>password</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-error
+      *ngIf="!!form.errors?.noMatch && form.controls.repeatPassword.valid"
+      class="alert alert-danger"
+    >
+      Hasła się różnią
+    </mat-error>
+  </div>
+  <div class="row">
+    <button
+      style="margin-top: 10px"
+      color="primary"
+      [disabled]="form.invalid"
+      mat-raised-button
+    >
+      Zarejestruj się
+    </button>
+  </div>
+</form>
