@@ -1,0 +1,61 @@
+{
+    "identityPoolName": "testAuthIdentityPool",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "ekoser0a08929a",
+    "userPoolName": "ekoserwisworkmanagement",
+    "autoVerifiedAttributes": [
+        "phone_number"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Forgot password code: {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 6,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase"
+    ],
+    "requiredAttributes": [
+        "phone_number",
+        "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [],
+    "userpoolClientReadAttributes": [],
+    "userpoolClientLambdaRole": "ekoser0a08929a_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "0a08929a",
+    "resourceName": "ekoserwisworkmanagement",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "serviceName": "Cognito",
+    "usernameAttributes": [
+        "email",
+        "phone_number"
+    ],
+    "useDefault": "manual",
+    "userPoolGroups": false,
+    "userPoolGroupList": [],
+    "adminQueries": false,
+    "thirdPartyAuth": false,
+    "authProviders": [],
+    "usernameCaseSensitive": false,
+    "dependsOn": []
+}

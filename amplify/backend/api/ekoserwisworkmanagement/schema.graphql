@@ -1,0 +1,23 @@
+enum Unit {
+  HOURS
+  PCS
+}
+
+type WorkLog @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  amount: Int
+  Employee: Employee @connection
+  WorkTyp: WorkType @connection
+}
+
+type WorkType @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  unit: Unit
+}
+
+type Employee @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  mobile: String
+  fullName: String
+}

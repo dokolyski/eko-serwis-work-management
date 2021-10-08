@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ekoserwisworkmanagem-staging-125156-authRole",
+      "UnauthRoleArn": "arn:aws:iam::194647714522:role/amplify-ekoserwisworkmanagem-staging-125156-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::194647714522:role/amplify-ekoserwisworkmanagem-staging-125156-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-ekoserwisworkmanagem-staging-125156-deployment",
+      "UnauthRoleName": "amplify-ekoserwisworkmanagem-staging-125156-unauthRole",
+      "StackName": "amplify-ekoserwisworkmanagem-staging-125156",
+      "StackId": "arn:aws:cloudformation:eu-central-1:194647714522:stack/amplify-ekoserwisworkmanagem-staging-125156/05f1f010-25db-11ec-8d56-064509019420",
+      "AmplifyAppId": "do66kpic4pm9t"
+    },
+    "categories": {
+      "auth": {
+        "ekoserwisworkmanagement": {}
+      }
+    }
+  }
+}
